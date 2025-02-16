@@ -28,7 +28,7 @@ app.post("/send-email", async (req, res) => {
     from: `${name} `,
     to: "njogucollins10397@gmail.com", // Your Gmail
     subject: `New message from ${name} /n Email: ${email}`,
-    message: message,
+    message: `${message}`,
   };
 
   try {
